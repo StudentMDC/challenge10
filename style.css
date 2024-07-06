@@ -1,0 +1,129 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: var(--Violet);
+}
+@media (min-width:390px) {
+  body{
+    background-image: url("images/bg-desktop.svg");
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+header {
+  margin-top: 20px;
+  height: 100px;
+}
+header .container .logo {
+  width: 150px;
+  height: 60px;
+}
+/* @media (min-width:540px) {
+  header .container .logo {
+    width: 150px;
+    height: 100px;
+  }
+} */
+header .container .logo img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width:540px){
+  .landing {
+    height: calc(100vh - 200px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+.landing .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width:540px) {
+  .landing .container{
+    flex-direction: row;
+    align-items: self-start;
+    gap: 30px;
+  }
+  .landing .landing-img {
+    width: 60%;
+    height: 50%;
+  }
+}
+.landing .landing-img img{
+  width: 100%;
+  height: 100%;
+}
+.landing .landing-text {
+  text-align: center;
+  color: white;
+}
+@media (min-width:540px) {
+  .landing .landing-text {
+    width: 40%;
+    text-align: left;
+  }
+}
+.landing .landing-text h2 {
+  font-weight: 400;
+}
+@media (min-width:540px) {
+  .landing .landing-text h2{
+    font-weight: 500;
+    width: 300px;
+  }
+  .landing .landing-text p {
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+.landing .landing-text button {
+  padding: 20px;
+  border-radius: 30px;
+  width: 80%;
+  outline: none;
+  border: none;
+  box-shadow: 0 5px 12px 0 black;
+  color: var(--Violet);
+}
+@media (min-width:540px) {
+  .landing .landing-text button{
+    width: 60%;
+  }
+
+}
+
